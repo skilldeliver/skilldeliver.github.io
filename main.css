@@ -1,3 +1,4 @@
+
 header {
     width: 100%;
     height: 64px;
@@ -5,6 +6,16 @@ header {
     z-index: 9;
     top: 0;
     left: 0;
+}
+
+.header-logo {
+    text-decoration: none;
+    font-weight: bold;
+    font-weight: 700;
+}
+
+section {
+    position: relative;
 }
 
 section.home-hero {
@@ -15,30 +26,38 @@ section.home-hero {
     -ms-flex-align: center;
     align-items: center;
     height: 640px;
-    background-image: linear-gradient(to top right,#450b7c,#563cc9,#49e9fb);
+    background-image: linear-gradient(to top right,#450b7c,#8360c3,#2ebf91);
 }
 
-section {
-    position: relative;
+.hero-pattern-bg {
+    height: 100%;
+}
+.hero-pattern-bg img {
+    display: block;
+    width: 100%;
 }
 
-.header-logo {
-    text-decoration: none;
-    font-weight: bold;
-    
+.hero-text h1 {
+    position: absolute;
+    color: white;
+    width: 50%;
+    padding-left: 5%;
 }
+
+/* TODO fix the header */
 
 /* unvisited link */
 a:link {
     color: white;
-    font-family: Oswald;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
   }
   
   /* visited link */
   a:visited {
     color: white;
-    font-family: Oswald;
-
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
   }
   
   /* mouse over link */
