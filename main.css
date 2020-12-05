@@ -30,11 +30,14 @@ section.home-hero {
 }
 
 .hero-pattern-bg {
-    height: 100%;
+    height: 610px;
+    width: 1280px;
+    position: fixed;
 }
+
 .hero-pattern-bg img {
     display: block;
-    width: 100%;
+    width: 100%; /* or whatever width you want. *//* or whatever width you want. */
 }
 
 .hero-text h1 {
