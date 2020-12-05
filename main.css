@@ -41,10 +41,12 @@ section.home-hero {
 }
 
 .hero-text h1 {
-    position: absolute;
+    position: relative;
     color: white;
-    width: 50%;
+    font-size: 64px;
+    font-weight: 700;
     padding-left: 5%;
+    vertical-align: middle;;
 }
 
 /* TODO fix the header */
