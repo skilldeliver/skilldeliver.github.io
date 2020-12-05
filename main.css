@@ -37,7 +37,7 @@ section.home-hero {
 
 .hero-pattern-bg img {
     display: block;
-    width: 100%; /* or whatever width you want. *//* or whatever width you want. */
+    width: 100%; /* or whatever width you want. */
 }
 
 .hero-text h1 {
@@ -46,8 +46,21 @@ section.home-hero {
     font-size: 64px;
     font-weight: 700;
     padding-left: 5%;
-    vertical-align: middle;;
+    vertical-align: middle;
+    margin-top: -200px; /* TODO temp - fix later */ 
 }
+
+.hero-pattern-mask {
+    width: 1280px;
+    margin-top: 516px;
+    position: absolute;
+}
+
+.hero-pattern-mask img {
+    display: block;
+    width: 100%;
+}
+
 
 /* TODO fix the header */
 
