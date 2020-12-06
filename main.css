@@ -38,15 +38,27 @@ section.home-hero {
     display: block;
     width: 100%; /* or whatever width you want. */
 }
+.hero-text  {
+    width: 100%;
+}
 
 .hero-text h1 {
     position: relative;
     color: white;
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 700;
     padding-left: 5%;
     vertical-align: middle;
     margin-top: -200px; /* TODO temp - fix later */ 
+    width: 100%;
+}
+
+.hero-text h4 {
+    position: relative;
+    color: white;
+    opacity: 0.7;
+    vertical-align: middle; 
+    padding-left: 5%;
 }
 
 .hero-pattern-mask {
@@ -64,10 +76,16 @@ section.home-hero {
 /* TODO fix the header */
 
 /* unvisited link */
-a:link {
+.nav-link {
     color: white;
+    opacity: 0.8;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
+  }
+
+  .nav-link:hover {
+      color: white;
+      opacity: 1.0;
   }
   
   /* visited link */
@@ -84,5 +102,5 @@ a:link {
   
   /* selected link */
   a:active {
-    color: blue;
+    color: white;
   }
