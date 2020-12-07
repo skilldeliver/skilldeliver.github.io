@@ -61,6 +61,15 @@ section.home-hero {
     padding-left: 5%;
 }
 
+.hero-text button {
+    margin-top: -2%;
+    margin-left: 35%;
+    color: #450b7c;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    border-radius: 20px; 
+}
+
 .hero-pattern-mask {
     width: 100%;
     margin-top: 516px;
