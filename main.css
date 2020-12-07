@@ -30,13 +30,14 @@ section.home-hero {
 
 .hero-pattern-bg {
     height: 610px;
-    width: 1280px;
-    position: fixed;
+    width: 100%;
+    position: absolute;
+    overflow-x: hidden;
 }
 
 .hero-pattern-bg img {
     display: block;
-    width: 100%; /* or whatever width you want. */
+    width: 1280px; /* or whatever width you want. */
 }
 .hero-text  {
     width: 100%;
@@ -112,4 +113,19 @@ section.home-hero {
   /* selected link */
   a:active {
     color: white;
+  }
+
+  /* ABOUT ME */
+  .about-me h2{
+      color: #0a0213;
+      font-size: 42px;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding-left: 5%;
+  }
+
+  .about-personal-photo {
+      border-radius: 50%;
+      width: 40%;
+      margin-left: 50%;
   }
