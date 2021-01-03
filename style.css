@@ -54,12 +54,14 @@ nav {
     cursor: pointer;
 }
 
+/* larger table stylings */
 @media (min-width: 768px) and (max-width: 1024px){
     .nav-links {
         width: 60%;
     }
 }
 
+/* mobile and table navbar settings */
 @media (max-width: 767px) {
     body {
         overflow-x: hidden;
