@@ -17,7 +17,7 @@ nav {
 /* navbar logo and brand name */
 .logo {
     color: white;
-    font-size: 13px;
+    font-size: 15px;
     text-transform: uppercase;
 }
 
@@ -37,7 +37,7 @@ nav {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 /* mobile burger menu */
@@ -58,6 +58,13 @@ nav {
 @media (min-width: 768px) and (max-width: 1024px){
     .nav-links {
         width: 60%;
+    }
+}
+
+/* query for very large screens */
+@media (min-width: 1921px){
+    .nav-links {
+        width: 10%;
     }
 }
 
