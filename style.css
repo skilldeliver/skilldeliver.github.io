@@ -6,6 +6,7 @@
 
 body {
     background-color: black;
+    overflow-x: hidden;
 }
 
 /* navbar styling */
@@ -23,7 +24,7 @@ nav {
 /* navbar logo and brand name */
 .logo {
     color: white;
-    font-size: 15px;
+    font-size: 17px;
     text-transform: uppercase;
     font-weight: 600;
     cursor: pointer;
@@ -47,7 +48,7 @@ nav {
     opacity: 0.8;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .nav-links a:hover {
@@ -98,7 +99,6 @@ nav {
         width: 100%;
         position: absolute;
         right: 0px;
-        height: 92vh;
         top: 0;
         overflow-y: hidden;
         background-color: mediumblue;
@@ -119,6 +119,10 @@ nav {
     overflow: hidden;
     display: flex;
     transform: translateX(0%);
+}
+
+.hide {
+    overflow-y: none;
 }
 
 @keyframes navLinkFade {
@@ -180,24 +184,21 @@ h2 {
 }
 
 .hero-waves-mask {
-    width: 100%;
+    width: 105%;
     height: 500px;
     margin-top: 45px;
-    padding-left: 5px;
 }
 
 .hero-waves-mask img {
     height: 500px;
     width: 100%;
-}
-
-.hero-waves-mask {
-    position: absolute;
+    object-fit: fill;
 }
 
 .hero-pattern {
     height: 100%;
     width: 100%;
     position: absolute;
+    top: -200px;
     object-fit: cover;
 }
