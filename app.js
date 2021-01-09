@@ -1,3 +1,8 @@
+const navResetOnResize = (nav, navClass, burger, burgerClass) => {
+    nav.classList.remove(navClass);
+    burger.classList.remove(burgerClass);
+}
+
 const navLinksFade = () => {
     const navLinks = document.querySelectorAll('.nav-links li');
     
@@ -6,7 +11,6 @@ const navLinksFade = () => {
             link.style.animation = '';
         }
         else {
-            console.log(index);
             link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0.5}s`;
         }
     });
@@ -16,15 +20,21 @@ const navLinksFade = () => {
 const navToggle = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
-    const body = document.querySelector('body');
+    const mediaQuery = window.matchMedia('(min-width: 768px)');
 
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
-        body.classList.toggle('hide');
         navLinksFade();
         // Burger animation
         burger.classList.toggle('toggle');
     });
+    mediaQuery.addEventListener("change", () => {
+        if (mediaQuery.matches){
+            navResetOnResize(nav, 'nav-active', burger, 'toggle', navLinksFade);
+        }
+    });
+    // navResetOnResize(nav, 'nav-active', burger, 'toggle', navLinksFade);
+
 }
 
 const app = () => {
