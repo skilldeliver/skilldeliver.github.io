@@ -219,7 +219,7 @@ h2 {
 }
 
 .go-to-action:hover {
-    background-color: #e7e7e7;
+    background-image: linear-gradient(225deg,#ff733b, #ffcb59);
 }
 
 
