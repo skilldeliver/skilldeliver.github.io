@@ -12,7 +12,7 @@ body {
 /* navbar styling */
 nav {
     position: absolute;
-    z-index: 5;
+    z-index: 10;
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -90,9 +90,27 @@ nav {
         overflow-x: hidden;
     }
 
+    .nav-links a{
+        align-items: center;
+        color: #84898F;
+        opacity: 0.8;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    .nav-links a:hover {
+        color: white;
+        opacity: 1.0;
+        color: #676a6e;
+    }
+    
+
     .nav-links li {
         opacity: 0;
         font-size: 14px;
+        margin: 5% auto;
     }
 
     .nav-links {
@@ -101,11 +119,11 @@ nav {
         right: 0px;
         top: 0;
         overflow-y: hidden;
-        background-color: mediumblue;
+        background-color: #F7F7F7;
         display: none;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         transform: translateX(100%);
         transition: transform 0.5s ease-out;
     }
@@ -119,10 +137,11 @@ nav {
     overflow: hidden;
     display: flex;
     transform: translateX(0%);
+    height: 100vh;
 }
 
 .hide {
-    overflow-y: none;
+    overflow-y: hidden;
 }
 
 @keyframes navLinkFade {
@@ -136,6 +155,8 @@ nav {
     }
 }
 
+
+
 /* create X symbol for closing the burger*/
 .toggle .line1{
     transform: rotate(-45deg) translate(-5px,6px);
@@ -147,6 +168,10 @@ nav {
 
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.toggle div {
+    background-color: #8C94BA;
 }
 
 /* home hero styling */
@@ -173,8 +198,9 @@ nav {
 
 .hero-text p {
     color: white;
-    font-size: 24px;
+    font-size: 22px;
     margin-top: 15px;
+    font-family: Montserrat,sans-serif;
 }
 
 h2 {
@@ -261,7 +287,7 @@ h2 {
     height: 50px;
     font-family: Montserrat,sans-serif;
     font-weight: 900;
-    font-size: .688rem;
+    font-size: .788rem;
     line-height: 18px;
     letter-spacing: 1.54px;
     text-transform: uppercase;
@@ -277,7 +303,7 @@ h2 {
     visibility: visible;
     overflow: hidden;
     transform: translateZ(0);
-    background-image: linear-gradient(225deg,#F71E69, #F8BF48);
+    background-image: linear-gradient(225deg,#f75b1e, #F8BF48);
 }
 
 .go-to-action:hover {
