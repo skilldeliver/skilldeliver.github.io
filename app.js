@@ -5,7 +5,7 @@ const navResetOnResize = (nav, navClass, burger, burgerClass, navLinkFade) => {
     burger.classList.remove(burgerClass);
 }
 
-const navLinksFade = () => {
+const navLinksFade = (onResize) => {
     if (!onResize){
         const navLinks = document.querySelectorAll('.nav-links li');
 
