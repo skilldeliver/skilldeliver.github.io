@@ -265,7 +265,7 @@ h2 {
     }
     
     .hero-text p {
-        font-size: 15px;
+        font-size: 18px;
     }
 }
 
@@ -327,11 +327,11 @@ h2 {
     }
     
     .hero-text h1 {
-        font-size: 30px;
+        font-size: 35px;
     }
-    
+
     .hero-text p {
-        font-size: 9px;
+        width: 400px;
     }
     
     @keyframes navLinkFade {
