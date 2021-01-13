@@ -24,7 +24,6 @@ body {
     display: flex;
     width: 1200px;
     justify-content: space-between;
-    background-color: #cfcfcf;
 }
 
 .affiliations h3 {
@@ -78,13 +77,13 @@ body {
     padding: 5px;
     height: 45%;
     border-radius: 10px;
-    max-width: 70%;
+    width: 60%;
     cursor: pointer;
 }
 
 .preview img {
     border-radius: 50%;
-    max-width: 50%;
+    width: 60px;
     display: block;
 }
 
