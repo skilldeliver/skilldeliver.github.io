@@ -1,4 +1,43 @@
-div {
-    width: 500px;
-    height: 500px;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
+
+body {
+    background-color: #F5F7FC;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.about h2 {
+    margin: 0 auto;
+}
+
+.about .content{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.text {
+    position: relative;
+    width: 500px;
+    background-color: rgb(252, 252, 252);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 5%;
+    padding: 20px 20px;
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(90, 90, 90);
+    margin-right: 100px;
+}
+
+.about-personal-photo {
+    position: relative;
+    border-radius: 50%;
+    width: 400px;
+}
+
