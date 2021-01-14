@@ -6,6 +6,14 @@
 
 body {
     background-color: #F5F7FC;
+	font-family: 'Muli', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;  
+	margin: 0;
+   background-color: #F5F7FC;
     overflow-x: hidden;
     position: relative;
 }
@@ -23,7 +31,7 @@ body {
     flex-direction: row-reverse;
 }
 
-.typewriter-text {
+.text {
     position: relative;
     width: 500px;
     background-color: rgb(252, 252, 252);
@@ -50,15 +58,19 @@ body {
 .affiliations {
     display: flex;
     width: 1200px;
+    margin-top: 20%;
     justify-content: space-between;
 }
 
 .affiliations h3 {
     text-align: center;
+    font-family: 'Baloo Paaji 2', cursive;
+    text-transform: uppercase;
+    font-size: 2rem;
 }
 
 .card {
-    background-color: #fff;
+    background-color: #F5F7FC;
 	border-radius: 10px;
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); 
     max-width: 100%;
@@ -88,18 +100,17 @@ body {
 
 .card p {
     position: relative;
-    color: black;
-    font-size: 14px;
-    padding: 0 10px;
-    width: 100%;  
+    font-size: 16px;
+    padding: 10px 10px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(66, 66, 66);
 }
 
 .preview {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgb(46,191,145);
-    background: linear-gradient(90deg, rgba(46,191,145,1) 0%, rgba(130,139,227,1) 0%, rgba(130,93,229,1) 100%);
     color: #fff;
     padding: 5px;
     height: 45%;
@@ -108,11 +119,35 @@ body {
     cursor: pointer;
 }
 
+
+#experience .preview {
+    background-image: linear-gradient(90deg, #460D7D, #6A3DA6);
+}
+
+
+#organizations .preview {
+    background-image: linear-gradient(90deg,  #6A3DA6, #5E89AD);
+}
+
+#education .preview {
+    background-image: linear-gradient(90deg, #5E89AD, #2ebf91);
+}
+
+
 .preview img {
     border-radius: 50%;
     width: 60px;
     display: block;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    filter: saturate(0);
+  
 }
+.add-color {
+    -webkit-filter: grayscale(0%) !important; /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%) !important;
+}
+
 
 .course-info {
     text-align: center;
@@ -141,7 +176,7 @@ body {
     display: inline-block;
     position: relative;
     animation-duration: 10s;
-    animation-timing-function: steps(25, end);
+    animation-timing-function: steps(9, end);
     animation-iteration-count: infinite;
   }
   
@@ -161,7 +196,7 @@ body {
     }
     20%,
     80% {
-      width: 16.5em;
+      width: 2em;
     }
   }
   

@@ -46,8 +46,31 @@ const navToggle = () => {
     // }
 }
 
+const cardHover = () => {
+    console.log('Something?')
+    const cardPreview = document.querySelectorAll('.preview');
+    const cardPreviewImg = document.querySelector('.preview img');
+
+    // cardPreview.addEventListener("mouseover", () => {
+    //     cardPreviewImg.classList.add('add-color');
+    //     console.log('Works!');
+    // });
+    cardPreview.forEach(item => {    
+        item.addEventListener("mouseover", event => {
+            item.getElementsByTagName("img")[0].classList.add('add-color');
+            console.log("Mouse in");
+        });
+        
+        item.addEventListener("mouseout", event => {
+            item.getElementsByTagName("img")[0].classList.remove('add-color');
+        });
+    })
+
+}
+
 const app = () => {
-    navToggle();
+    // navToggle();
+    cardHover();
 }
 
 app();
