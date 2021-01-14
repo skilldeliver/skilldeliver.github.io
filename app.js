@@ -69,7 +69,7 @@ const cardHover = () => {
 }
 
 const app = () => {
-    // navToggle();
+    navToggle();
     cardHover();
 }
 
