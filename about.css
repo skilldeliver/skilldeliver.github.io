@@ -5,7 +5,7 @@
 }
 
 .about {
-    background-color: #F5F7FC;
+    /* background-color: #F5F7FC; */
 	font-family: 'Muli', sans-serif;
 	display: flex;
 	align-items: center;
@@ -13,12 +13,18 @@
 	flex-direction: column;
 	min-height: 100vh;  
 	margin: 0;
-    background-color: #F5F7FC;
+    background-image: linear-gradient(180deg, white, #F5F7FC);
     overflow-x: hidden;
     position: absolute;
     width: 100%;
     z-index: -10;
+    margin-top: 720px;
 }
+
+/* h2#about {
+    position: absolute;
+    margin-top: 720px;
+} */
 
 .about .heading {
     margin-left: 8vw;
@@ -39,8 +45,8 @@
 .text {
     position: relative;
     width: 500px;
-    background-color: rgb(252, 252, 252);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     border-radius: 5%;
     padding: 20px 20px;
     font-family: 'Montserrat', sans-serif;
@@ -229,7 +235,7 @@
   @media (min-width: 768px) and (max-width: 1024px){
         .affiliations {
             flex-direction: column;
-            width: 70%;
+            width: 100%;
         }
 
       .text {
@@ -251,9 +257,13 @@
   }
 
   @media (max-width: 767px) {
+    .about {
+        margin-top: 1030px;
+    }
+
     .affiliations {
         flex-direction: column;
-        width: 70%;
+        width: 100%;
     }
 
     .text {
