@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+.about a{
+    color: #F76A24;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.about a:hover {
+    text-decoration: underline;
+}
+
 .about {
     /* background-color: #F5F7FC; */
 	font-family: 'Muli', sans-serif;
@@ -268,7 +279,7 @@
 
     .text {
         position: relative;
-        width: 300px;
+        width: 90%;
         background-color: rgb(252, 252, 252);
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         border-radius: 5%;
