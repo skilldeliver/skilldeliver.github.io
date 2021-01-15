@@ -57,7 +57,7 @@ const cardHover = () => {
     // });
     cardPreview.forEach(item => {    
         item.addEventListener("mouseover", event => {
-            item.getElementsByTagName("img")[0].classList.add('add-color');
+                item.getElementsByTagName("img")[0].classList.add('add-color');
             console.log("Mouse in");
         });
         

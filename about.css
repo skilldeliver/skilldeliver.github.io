@@ -21,16 +21,11 @@
     margin-top: 720px;
 }
 
-/* h2#about {
-    position: absolute;
-    margin-top: 720px;
-} */
-
 .about .heading {
-    margin-left: 8vw;
     color: #373737;
     font-size: 45px;
     text-transform: uppercase;
+    margin-top: 10%;
 }
 
 .about .content{
@@ -148,11 +143,11 @@
 
 
 #organizations .preview {
-    background-image: linear-gradient(90deg,  #6A3DA6, #5E89AD);
+    background-image: linear-gradient(90deg, #5E89AD, #2ebf91);
 }
 
 #education .preview {
-    background-image: linear-gradient(90deg, #5E89AD, #2ebf91);
+    background-image: linear-gradient(90deg,  #6A3DA6, #5E89AD);
 }
 
 
@@ -235,30 +230,35 @@
   @media (min-width: 768px) and (max-width: 1024px){
         .affiliations {
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
             width: 100%;
         }
 
+        .about .content{
+            flex-direction: column-reverse;
+        }
+
       .text {
-          position: relative;
-        width: 300px;
+        position: relative;
+        width: 80%;
         background-color: rgb(252, 252, 252);
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         border-radius: 5%;
         padding: 20px 20px;
         font-family: 'Montserrat', sans-serif;
         color:rgb(90, 90, 90);
+        margin-right: 0;
     }
     
     .about-personal-photo {
-        position: absolute;
-        float: right;
         right: 0;
     }    
   }
 
   @media (max-width: 767px) {
-    .about {
-        margin-top: 1030px;
+    .about .content{
+       flex-direction: column-reverse;
     }
 
     .affiliations {
@@ -275,11 +275,13 @@
         padding: 20px 20px;
         font-family: 'Montserrat', sans-serif;
         color:rgb(90, 90, 90);
+        margin-right: 0;
     }
     
     .about-personal-photo {
-        position: absolute;
-        float: right;
         width: 300px;
     }
+    /* .about {
+        margin-top: ; */
+    /* } */
   }

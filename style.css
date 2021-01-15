@@ -118,15 +118,18 @@ nav {
 
 
 .hero-waves-mask {
-    width: 105%;
+    position: absolute;
+    width: 100%;
     height: 500px;
-    margin-top: 45px;
+    bottom: -20px;
 }
 
 .hero-waves-mask img {
+    z-index: -10;
+    position: absolute;
     height: 500px;
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 .hero-pattern {
@@ -150,6 +153,7 @@ nav {
     justify-content: space-between;
     top: 30%;
     transform: translateY(-50%);
+    z-index: 10;
 }
 
 .social-media > a > div {
@@ -185,6 +189,7 @@ nav {
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
     display: inline-block;
+    z-index: 10;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -266,7 +271,7 @@ nav {
 }
 
 /* mobile and table navbar settings */
-@media (max-width: 767px) {
+@media (min-width: 400px) and (max-width: 767px) {
     body {
         overflow-x: hidden;
     }
@@ -352,6 +357,94 @@ nav {
 
 }
 
+@media (max-width: 400px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links a{
+        align-items: center;
+        color: #84898F;
+        opacity: 0.8;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    .nav-links a:hover {
+        color: white;
+        opacity: 1.0;
+        color: #676a6e;
+    }
+    
+
+    .nav-links li {
+        opacity: 0;
+        font-size: 14px;
+        margin: 5vh auto;
+    }
+
+    .nav-links {
+        width: 100%;
+        position: absolute;
+        right: 0px;
+        top: 0;
+        overflow-y: hidden;
+        background-color: #F7F7F7;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-out;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .social-media {
+        margin-top: -50px;
+    }
+    
+    .social-media {
+        position: relative;
+        height: 80px;
+        width: 220px;
+        flex-direction: row;
+        left: 14vw;
+        justify-content: space-between;
+    }
+    
+    .hero-text h1 {
+        font-size: 25px;
+    }
+
+    .hero-text p {
+        width: 70vw;
+    }
+
+    .hero-waves-mask {
+        width: 100%;
+    }
+
+    .hero-waves-mask img {
+        object-fit: cover;
+    
+    }    
+    
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+}
 .nav-active {
     overflow: hidden;
     display: flex;
