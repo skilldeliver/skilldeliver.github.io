@@ -229,6 +229,10 @@ nav {
     .nav-links {
         width: 10%;
     }
+        
+    .hero-text {
+        margin-left: 20vw;
+    }
 
     @keyframes navLinkFade {
         from {
