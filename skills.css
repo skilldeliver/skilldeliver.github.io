@@ -9,6 +9,10 @@ body{
 
 .skills h3 {
     text-align: center;
+    font-family: 'Baloo Paaji 2', cursive;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #585858;
 }
 
 .container {
@@ -65,10 +69,6 @@ body{
     padding: 0 5px;
 }
 
-.rating:hover.one #first{
-    background-color: rgb(80, 220, 255);
-    border-color: rgb(80, 200, 255);
-}
 
 .skills-list {
 }
@@ -104,4 +104,14 @@ body{
 .five #first, .five #second, .five #third, .five #forth, .five #fifth {
     background-color: #2ebf91;
     border-color: #2ebf91;
+}
+
+.rating:hover.one #first{
+    background-color: #ff732d;
+    border-color: #ff732d;
+}
+
+.rating:hover.five #first, .rating:hover.five #second, .rating:hover.five #third, .rating:hover.five #forth, .rating:hover.five #fifth{
+    background-color: #ff732d;
+    border-color: #ff732d;
 }
