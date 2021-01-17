@@ -26,10 +26,8 @@
 	margin: 0;
     background-image: linear-gradient(180deg, white, #F5F7FC);
     overflow-x: hidden;
-    position: absolute;
     width: 100%;
     z-index: -10;
-    margin-top: 720px;
 }
 
 .about .heading {

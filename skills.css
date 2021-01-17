@@ -1,10 +1,25 @@
-body{
-    background-color: #F5F7FC;
-}
 
 .skills {
+    position: relative;
     width: 100%;
     height: 100%;
+    display: flex;
+	align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* margin-top: 300vh; */
+}
+
+.skills  .heading {
+    /* color: #373737; */
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-top: 10%;
+    font-family: 'Baloo Paaji 2', cursive;
+    background: linear-gradient(0deg, #774deb, #6f77e4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .skills h3 {
@@ -20,6 +35,7 @@ body{
     justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
+    z-index: 5;
 }
 
 
@@ -55,6 +71,9 @@ body{
     color:rgb(90, 90, 90);
     font-weight: bolder;
     font-family: 'Montserrat', sans-serif;
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
 }
 
 
@@ -70,49 +89,84 @@ body{
     padding: 0 5px;
 }
 
-
-.skills-list {
-}
-
 .rating .star {
-    width: 10px; 
-    height: 10px;
+    width: 13px; 
+    height: 13px;
     background-color: #d4d3d3;
-    border: 2px solid #d4d3d3;
+    /* border: 2px solid #d4d3d3; */
     border-radius: 50%;
+    transition: all 0.3s ease-out;
 }
 
 .one #first {
-    background-color: #2ebf91;
-    border-color: #2ebf91;
+    background-image: linear-gradient(0deg, #9DDD9A, #2DD6B6);
 }
 
 .two #first, .two #second {
-    background-color: #2ebf91;
-    border-color: #2ebf91;
+    background-image: linear-gradient(0deg, #61ca5b, #1fcfaf);
+
 }
 
 .three #first, .three #second, .three #third {
-    background-color: #2ebf91;
-    border-color: #2ebf91;
+    background-image: linear-gradient(0deg, #61ca5b, #1fcfaf);
 }
 
 .four #first, .four #second, .four #third, .four #forth {
-    background-color: #2ebf91;
-    border-color: #23ce98;
+    background-image: linear-gradient(0deg, #61ca5b, #1fcfaf);
+
 }
 
 .five #first, .five #second, .five #third, .five #forth, .five #fifth {
-    background-color: #2ebf91;
-    border-color: #2ebf91;
+    background-image: linear-gradient(0deg, #61ca5b, #1fcfaf);
 }
 
 .rating:hover.one #first{
-    background-color: #ff732d;
-    border-color: #ff732d;
+    background-image: linear-gradient(0deg, #825EE5, #8389E4);
+}
+
+.rating:hover.four #first, .rating:hover.four #second, .rating:hover.four #third, .rating:hover.four #forth{
+    background-image: linear-gradient(0deg, #825EE5, #8389E4);
+}
+
+
+.rating:hover.three #first, .rating:hover.three #second, .rating:hover.three #third{
+    background-image: linear-gradient(0deg, #825EE5, #8389E4);
+}
+
+.rating:hover.two #first, .rating:hover.two #second{
+    background-image: linear-gradient(0deg, #825EE5, #8389E4);
 }
 
 .rating:hover.five #first, .rating:hover.five #second, .rating:hover.five #third, .rating:hover.five #forth, .rating:hover.five #fifth{
-    background-color: #ff732d;
-    border-color: #ff732d;
+    background-image: linear-gradient(0deg, #825EE5, #8389E4);
+}
+
+  
+@media (min-width: 768px) and (max-width: 1220px){
+    .container {
+        width: 750px;
+        flex-wrap: wrap; 
+    }
+    .rating {
+    width: 150px;
+    height: 10px;
+    }
+    .skills-list li a{
+        font-size: 18px;
+    }
+    .rating .star {
+        width: 15px; 
+        height: 15px;
+        background-color: #d4d3d3;
+        border: 2px solid #d4d3d3;
+        border-radius: 50%;
+        transition: all 0.3s ease-out;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 90vw;
+        flex-direction: column;
+    }
 }
