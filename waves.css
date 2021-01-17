@@ -5,23 +5,23 @@
 .box {
 	position: absolute;
 	transform: rotate(80deg);
-    right: 0;
     z-index: -10;
+    top: 0;
     margin: 0 auto;
 }
 
 .wave {
+  margin: 0 auto;
   position: absolute;
   top: 0;
-  right: 0;
+  object-fit: contain;
+  right: 120;
   opacity: .2;
   top: 3%;
   left: 10%;
   background: rgb(238, 238, 238);
   width: 1500px;
   height: 1300px;
-  margin-left: -350px;
-  margin-top: -250px;
   transform-origin: 50% 48%;
   border-radius: 43%;
   animation: drift 17000ms infinite linear;
@@ -29,7 +29,7 @@
 
 .wave.-three {
   animation: drift 17500ms infinite linear;
-	position: fixed;
+	position: absolute;
 	background-color: #F5F7FC;
 }
 
@@ -37,7 +37,7 @@
   animation: drift 13000ms infinite linear;
   opacity: .05;
   background: rgb(219, 219, 219);
-	position: fixed;
+	position: absolute;
 }
 
 .box:after {
@@ -61,7 +61,7 @@
 .contain {
 	animation-delay: 20s;   
 	z-index: 1000;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	bottom: 0;
