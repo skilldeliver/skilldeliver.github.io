@@ -64,6 +64,7 @@ body{
     align-items: center;
     width: 100px;
     height: 10px;
+    margin-left: 20px;
     background-color: #e6e6e6;
     border-radius: 2px;
     padding: 0 5px;
