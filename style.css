@@ -29,6 +29,7 @@ nav {
     align-items: center;
     min-height: 8vh;
     font-family: 'Montserrat', sans-serif;
+    visibility: hidden;
 }
 
 /* navbar logo and brand name */
@@ -194,6 +195,7 @@ nav {
 }
 
 .go-to-action {
+    visibility: hidden;
     -webkit-tap-highlight-color: transparent;
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;

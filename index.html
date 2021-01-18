@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="skills.css">
     <link rel="stylesheet" href="waves.css">
+    <link rel="stylesheet" href="animation.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
@@ -15,10 +16,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@700;800&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="slideDown">
             <div class="logo">Vladislav Mihov</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -39,7 +41,7 @@
             <div class="hero-text">
                 <h1>Looking for me?</h1>
                 <p>I am a software developer and computer science student.</p>
-                <button type="button" class="go-to-action">Go to my work!</button>
+                <button type="button" class="go-to-action expandUp">Go to my work!</button>
             </div>
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/mihov/" target="_blank">
@@ -58,7 +60,7 @@
                     </div>
                 </a>
             </div>
-            <div class="hero-waves-mask">
+            <div class="hero-waves-mask floating">
                 <img src="./assets/hero-waves.svg">
             </div>
         </section>
