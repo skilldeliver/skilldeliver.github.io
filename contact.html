@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="kwes-form">
+        <form method="POST" action="https://kwes.io/api/foreign/forms/youruniqueid">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" rules="required">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" rules="required|email|max:255">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rules="required"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    <script src="https://kwes.io/js/kwes.js"></script>
+</body>
+</html>
