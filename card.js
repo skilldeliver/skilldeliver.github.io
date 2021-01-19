@@ -1,3 +1,4 @@
+
 // INSERT JS HERE
 $('.card').tilt({
     glare: true,
@@ -35,7 +36,7 @@ $(window).scroll(function() {
     
         var topOfWindow = $(window).scrollTop();
             if (imagePos < topOfWindow+600) {
-                $(this).addClass("slideRight");
+                    $(this).addClass("slideRight");
             }
         });
 });
