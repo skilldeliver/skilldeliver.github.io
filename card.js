@@ -30,3 +30,12 @@ $(window).scroll(function() {
             }
         });
 });
+
+$('#contact-link').click(function() {
+    $('#contact-form').addClass("slideDown");
+});
+
+
+$('#close-link').click(function() {
+    $('#contact-form').removeClass("slideDown");
+});

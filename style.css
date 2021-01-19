@@ -3,6 +3,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     display: flex;
@@ -258,6 +261,11 @@ nav {
 
 }
 
+@media (min-width: 1350px) and (max-width:1920px){
+    .hero-text {
+        margin-left: 18vw;
+    }
+}
     
 /* larger tablets stylings */
 @media (min-width: 768px) and (max-width: 1024px){
@@ -471,6 +479,9 @@ nav {
     overflow-y: hidden;
 }
 
+.hidden {
+    visibility: hidden !important;
+}
 
 @keyframes navLinkFade {
     from {

@@ -3,6 +3,7 @@ const navResetOnResize = (nav, navClass, burger, burgerClass, navLinkFade) => {
     nav.classList.remove(navClass);
     navLinkFade(onResize);
     burger.classList.remove(burgerClass);
+    onResize = false;
 }
 
 const navLinksFade = (onResize) => {
@@ -16,6 +17,13 @@ const navLinksFade = (onResize) => {
             else {
                 link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0.5}s`;
             }
+        });
+    }
+    else {
+        const navLinks = document.querySelectorAll('.nav-links li');
+
+        navLinks.forEach((link, index) => {
+            link.style.animation = ``;
         });
     }
 }
@@ -41,24 +49,50 @@ const navToggle = () => {
             navResetOnResize(nav, 'nav-active', burger, 'toggle', navLinksFade);
         }
     });
-    // if (mediaQuery.matches){
-    //     navResetOnResize(nav, 'nav-active', burger, 'toggle', navLinksFade);
-    // }
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach((link, index) => {
+        link.addEventListener("click", () => {
+            if (!mediaQuery.matches){
+                console.log("Clicked!")
+                body.classList.toggle('hide');
+                nav.classList.toggle('nav-active');
+                navLinksFade(onResize);
+                // Burger animation
+                burger.classList.toggle('toggle');
+            }
+        });
+
+    });
+}
+
+const contactToggle = () => {
+    const contactLink = document.querySelector('#contact-link');
+    const closeLink = document.querySelector('#close-link');
+    const nav = document.querySelector('nav');
+
+    const contactSection = document.querySelector('.contact');
+    const body = document.querySelector('body');
+
+    contactLink.addEventListener("click", () => {
+        body.classList.toggle('hide');
+        nav.classList.toggle('hidden');
+        contactSection.classList.toggle('show-contact');
+    });
+
+    closeLink.addEventListener("click", () => {
+        body.classList.toggle('hide');
+        nav.classList.toggle('hidden');
+        contactSection.classList.toggle('show-contact');
+    });
 }
 
 const cardHover = () => {
-    console.log('Something?')
     const cardPreview = document.querySelectorAll('.preview');
     const cardPreviewImg = document.querySelector('.preview img');
 
-    // cardPreview.addEventListener("mouseover", () => {
-    //     cardPreviewImg.classList.add('add-color');
-    //     console.log('Works!');
-    // });
     cardPreview.forEach(item => {    
         item.addEventListener("mouseover", event => {
-                item.getElementsByTagName("img")[0].classList.add('add-color');
-            console.log("Mouse in");
+            item.getElementsByTagName("img")[0].classList.add('add-color');
         });
         
         item.addEventListener("mouseout", event => {
@@ -71,6 +105,7 @@ const cardHover = () => {
 const app = () => {
     navToggle();
     cardHover();
+    contactToggle();
 }
 
 app();

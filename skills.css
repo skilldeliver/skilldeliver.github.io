@@ -10,6 +10,10 @@
     /* margin-top: 300vh; */
 }
 
+.hide-content {
+    visibility: hidden;
+}
+
 .skills  .heading {
     /* color: #373737; */
     font-size: 45px;
