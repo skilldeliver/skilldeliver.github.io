@@ -29,6 +29,15 @@ $(window).scroll(function() {
                 $(this).addClass("bigEntrance");
             }
         });
+
+    $('.skills-list li').each(function(){
+        var imagePos = $(this).offset().top;
+    
+        var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+600) {
+                $(this).addClass("slideRight");
+            }
+        });
 });
 
 $('#contact-link').click(function() {
