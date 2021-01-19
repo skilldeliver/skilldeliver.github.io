@@ -20,8 +20,8 @@
   top: 3%;
   left: 10%;
   background: rgb(238, 238, 238);
-  width: 1500px;
-  height: 1300px;
+  width: 1000px;
+  height: 650px;
   transform-origin: 50% 48%;
   border-radius: 43%;
   animation: drift 17000ms infinite linear;
