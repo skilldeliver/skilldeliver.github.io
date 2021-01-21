@@ -1,0 +1,73 @@
+body {
+    background-color: gainsboro;
+}
+
+.projects {
+    background-color: black;
+    width: 1280px;
+    height: 100%;
+    color: white;
+    margin: 0 auto;
+}
+
+.projects h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.top-picks {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+article.project {
+    display: flex;
+    position: relative;
+    width: 700px;
+    height: 400px;  
+    margin: 50px auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3%;
+    transform-style: preserve-3d;   
+
+    /* glassmorphism */
+    background: rgba( 255, 255, 255, 0.20 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    box-shadow: 25px 25px 30px 31px rgba(223,144,253,0.15);
+}
+
+article.project img {
+    transform: translateZ(20px);
+}
+
+article.project button {
+    color: white;
+    width: 150px;
+    height: 50px;
+    background: rgba( 255, 255, 255, 0.10 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12.0px );
+    -webkit-backdrop-filter: blur( 12.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+article.information {
+    text-align: center;
+    width: 400px;
+}
+
+article.information h1 {
+    font-size: 42px;    
+}
+
+
+#judge0-bot {
+}

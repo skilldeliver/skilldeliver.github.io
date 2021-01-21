@@ -49,3 +49,8 @@ $('#contact-link').click(function() {
 $('#close-link').click(function() {
     $('#contact-form').removeClass("slideDown");
 });
+
+$('.project').tilt({
+    glare: true,
+    maxGlare: .5
+})
