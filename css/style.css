@@ -10,10 +10,12 @@ html{
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
     position: relative;
     z-index: -110;
+    width: 100%;
 }
 
 main {
@@ -24,15 +26,16 @@ main {
 
 /* navbar styling */
 nav {
-    position: absolute;
+    position: relative;
     z-index: 10;
     display: flex;
-    width: 100%;
+    width: 1280px;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
     font-family: 'Montserrat', sans-serif;
     visibility: hidden;
+    margin: 0 auto;
 }
 
 /* navbar logo and brand name */
@@ -104,10 +107,15 @@ nav {
 /* home hero styling */
 .hero-home {
     z-index: 0;
-    position: relative;
-    width: 100%;
-    height: 720px;
     top: 0;
+    width: 100vw;
+    height: 720px;
+}
+
+.hero-bg {
+    position: absolute;
+    width: 100vw;
+    height: 720px;
     background-image: linear-gradient(to top right,#450b7c,#8360c3,#2ebf91);
 }
 

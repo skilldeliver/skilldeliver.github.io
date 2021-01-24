@@ -1,28 +1,37 @@
 body {
-    background-color: black;
+    background-color: white;
 }
 
 .projects {
+    font-family: ;
     position: relative;
-    background-color: black;
+    background-color: #0E0526;
     width: 1280px;
     height: 100%;
-    color: white;
-    margin: 0 auto;
+    color: #cbced4;
+    margin: 0 auto;    
+    font-family: 'Roboto', sans-serif;
 }
 
 .projects h2 {
     width: 100%;
-    text-align: center;
+    text-align: left; 
+    text-transform: uppercase;
 }
 
-.ball {
+.bg-ball {
     position: absolute;
-    width: 450px;
-    height: 450px;
+    right: -150px;
+    top: -150px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
-    right: -50px;
-    background-image: linear-gradient(#050c25, #150322);
+    background: #4BA5BE;
+    background: -webkit-radial-gradient(top left, #4BA5BE 30%, #6B19AF, #9834BC);
+    background: -moz-radial-gradient(top left, #4BA5BE 30%, #6B19AF, #9834BC);
+    background: radial-gradient(to bottom right, #4BA5BE 30%, #6B19AF, #9834BC);
+    filter: blur(50px);
+
 }
 
 .top-picks {
@@ -39,17 +48,17 @@ article.project {
     width: 700px;
     height: 400px;  
     margin: 50px auto;
-    background-color: rgb(255, 255, 255);
-    border-radius: 3%;
+    /* background-color: rgb(255, 255, 255); */
+    border-radius: 15%;
     transform-style: preserve-3d;   
+    overflow: hidden;
 
     /* glassmorphism */
-    background: rgba( 255, 255, 255, 0.20 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 10.5px );
-    -webkit-backdrop-filter: blur( 10.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: linear-gradient(to top left, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    backdrop-filter: blur(5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 20px;
+    border: 3px solid rgba( 255, 255, 255, 0.18 );
 
     /* box-shadow: 25px 25px 30px 31px rgba(223,144,253,0.15); */
 }
@@ -73,14 +82,46 @@ article.project button {
 }
 
 article.information {
-    text-align: center;
+    text-align: left;
     width: 400px;
+
+    /* glassmorphism */
+    background: linear-gradient(to left, #9834bc2f, #4ba5be6b);
+    padding: 10px 10px;
+    /* border-radius: 10px; */
+    /* border: 1px solid rgba( 255, 255, 255, 0.18 );*/
+}
+
+article.information:hover {
+    background: linear-gradient(to left, #9834bc80, #4ba5bea4);
+}
+
+article.information .technologies {
+    display: flex;
+    width: 100%;
+    padding: 0;
+}
+
+article.information .technologies li {
+    list-style: none;
+    justify-content: space-around;
 }
 
 article.information h1 {
-    font-size: 32   px;    
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #E5E5E5;
+    margin: 10% auto;
+    width: 100%;
 }
 
+article.information p {
+    margin: 0;
+}
+
+article.information .buttons {
+    display: flex;
+}
 
 #judge0-bot {
 }
