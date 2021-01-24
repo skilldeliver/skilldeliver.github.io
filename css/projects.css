@@ -87,7 +87,7 @@ article.information {
 
     /* glassmorphism */
     background: linear-gradient(to left, #9834bc2f, #4ba5be6b);
-    padding: 10px 10px;
+    padding: 10px 20px; 
     /* border-radius: 10px; */
     /* border: 1px solid rgba( 255, 255, 255, 0.18 );*/
 }
@@ -98,13 +98,18 @@ article.information:hover {
 
 article.information .technologies {
     display: flex;
-    width: 100%;
+    width: 300px;
+    height: 50px;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 article.information .technologies li {
     list-style: none;
     justify-content: space-around;
+    font-size: 14px;
+    padding: 2px 5px;
+    margin: 5px 5px;
 }
 
 article.information h1 {
@@ -117,6 +122,10 @@ article.information h1 {
 
 article.information p {
     margin: 0;
+    font-size: 18px;
+    color: white;
+    opacity: 0.8;
+    font-weight: 400;
 }
 
 article.information .buttons {
