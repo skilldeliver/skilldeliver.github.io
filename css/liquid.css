@@ -20,16 +20,17 @@ body {
     position: absolute;
     transform: translate(-50%, -50%);
     font-size: 8rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container h1:nth-child(1){
     color: transparent;
-    -webkit-text-stroke: 4px blue;
+    -webkit-text-stroke: 4px #4C3A7C;
 }
 
 
 .container h1:nth-child(2){
-    color: blue;
+    color: #4C3A7C;
     animation: water 4s ease-in-out infinite;
 }
 
