@@ -1,8 +1,10 @@
 .contact {
     visibility: hidden;
-    position: fixed;
+    position: absolute;
     height: 100%;
     width: 100%;
+    top: 0;
+    left: 0;
     background:
     linear-gradient(
         rgba(0, 0, 0, 0.7), 
@@ -126,6 +128,7 @@
 
   @media (max-width: 767px) {
     .kwes-form {
+        padding-top: 4vh;
         width: 100vw;
         height: 100vh;
         border-radius: 0;
