@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F6F8FC;
+}
+
+.affiliations {
+    position: relative;
+    display: flex;
+    width: 1280px;
+    margin: 0 auto;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+}
+
+.list .illustration {
+    position: relative;  
+    margin: auto;
+}
+
+.affiliations .list h3 {
+    font-size: 64px;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0.1;
+}
+
+.affiliations #experience .illustration {
+    height: 160px;
+    top: -60px;
+    left: 70px;
+}
+
+.affiliations #education .illustration {
+    width: 230px;
+    top: -60px;
+    left: 40px;
+}   
+
+.affiliations #groups .illustration {
+    width: 160px;
+    top: -40px;
+    left: 40px;
+}
+
+.affiliations #experience ul {
+    list-style-type: square;
+    list-style-image: url('../assets/about/experience-list.svg');
+}
+
+.affiliations #education ul {
+    list-style-type: square;
+    list-style-image: url('../assets/about/education-list.svg');
+}
+
+.affiliations #groups ul {
+    list-style-type: square;
+    list-style-image: url('../assets/about/groups-list.svg');
+}
+
+.affiliations #experience h3 {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,255,162,1) 50%, rgba(0,0,0,1) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.affiliations #education h3 {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,153,0,1) 50%, rgba(0,0,0,1) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.affiliations #groups h3 {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(247,31,104,1) 50%, rgba(0,0,0,1) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+
+.laptop-floating{
+	animation-name: laptop-floating;
+	-webkit-animation-name: laptop-floating;
+
+	animation-duration: 5.5s;	
+	-webkit-animation-duration: 5.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes laptop-floating {
+	0% {
+		transform: translateY(0%);	
+	}
+	50% {
+		transform: translateY(20%);	
+	}	
+	100% {
+		transform: translateY(0%);
+	}			
+}
+
+@-webkit-keyframes laptop-floating {
+	0% {
+		-webkit-transform: translateY(0%);	
+	}
+	50% {
+		-webkit-transform: translateY(20%);	
+	}	
+	100% {
+		-webkit-transform: translateY(0%);
+	}			
+}
