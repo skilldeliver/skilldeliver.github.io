@@ -28,6 +28,45 @@ body {
     text-transform: uppercase;
     opacity: 0.1;
 }
+/* 
+.affiliations .list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+.affiliations .list ul li {
+    margin: 30px auto;
+}
+
+.affiliations .list h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #757575;
+    font-weight: bold;
+}
+
+
+.affiliations #experience h4.place {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.affiliations .list p {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.affiliations .list hr {
+    background-color: #DFE0E7;
+    height: 3px;
+    width: 80%;
+    margin: 10px auto;
+    /* border: 0;
+    box-shadow: 0 10px 10px -10px #8c8b8b inset; */
+}
 
 .affiliations #experience .illustration {
     height: 160px;
