@@ -18,9 +18,17 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.list {
+    position: relative;
+}
+
 .list .illustration {
-    position: relative;  
-    margin: 0 auto;
+    position: absolute;
+    margin: 15% auto;
+}
+
+.list ul {
+    margin-top: 110px;
 }
 
 .affiliations .list h3 {
