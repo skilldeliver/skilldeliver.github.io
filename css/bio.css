@@ -19,7 +19,7 @@ body {
     position: relative;
     display: flex;
     width: 1280px;
-    margin: 200px auto;
+    margin: 200pxw auto;
     justify-content: space-around;
     font-family: 'Roboto', sans-serif;
 }

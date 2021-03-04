@@ -19,20 +19,17 @@ footer p {
 
 .footer-bottom {
     flex-direction: column;
-    align-items: center;
 }
 .footer-bottom p{
     font-size: 24px;
     font-weight: unset;
-    flex-direction: column;
-    align-items: center;
 }
 footer .social-media {
     position: relative;
     flex-direction: row;
     justify-content: space-between;
     width: 300px;
-    margin: 0 auto;
+    margin: 75px auto;
 }
 
 footer .social-media > a > div  {
@@ -57,7 +54,7 @@ footer .social-media > a > div:hover {
     }
     footer .social-media {
         width: 80%;
-        margin: 30px auto;
+        margin: 60px auto;
         left: 0;
     }
 }
