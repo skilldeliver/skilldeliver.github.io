@@ -19,7 +19,7 @@ body {
     position: relative;
     display: flex;
     width: 1280px;
-    margin: 0 auto;
+    margin: 200px auto;
     justify-content: space-around;
     font-family: 'Roboto', sans-serif;
 }
@@ -192,4 +192,13 @@ body {
 	100% {
 		-webkit-transform: translateY(0%);
 	}			
+}
+
+@media (max-width: 1215px) {
+    .affiliations {
+        flex-direction: column;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
 }

@@ -31,14 +31,15 @@ $(window).scroll(function() {
             }
         });
 
-    $('.skills-list li').each(function(){
-        var imagePos = $(this).offset().top;
+    // TODO fix this script - it is not working properly
+    // $('.skills-list li').each(function(){
+    //     var imagePos = $(this).offset().top;
     
-        var topOfWindow = $(window).scrollTop();
-            if (imagePos < topOfWindow+600) {
-                    $(this).addClass("slideRight");
-            }
-        });
+    //     var topOfWindow = $(window).scrollTop();
+    //         if (imagePos < topOfWindow+600) {
+    //                 $(this).addClass("slideRight");
+    //         }
+    //     });
 });
 
 $('#contact-link').click(function() {
