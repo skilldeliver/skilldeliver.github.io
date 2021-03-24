@@ -99,6 +99,7 @@ body {
 }
 
 .affiliations #experience .illustration {
+    position: absolute;
     height: 160px;
     top: -60px;
     left: 70px;
