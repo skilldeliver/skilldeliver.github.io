@@ -205,21 +205,23 @@
 	}
 } */
 
+
 .typewriter-text {
     animation-name: typewriter;
     overflow: hidden;
     white-space: nowrap;
     display: inline-block;
     position: relative;
-    animation-duration: 10s;
-    animation-timing-function: steps(9, end);
+    animation-duration: 5s;
+    animation-timing-function: steps(8, end);
     animation-iteration-count: infinite;
   }
   
   .typewriter-text::after {
     content: "|";
     position: absolute;
-    right: 0;
+    right: -5px;
+    top: -5px;
     animation: caret infinite;
     animation-duration: 1s;
     animation-timing-function: steps(1, end);
