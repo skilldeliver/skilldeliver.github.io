@@ -38,7 +38,8 @@
     color: #373737;
     font-size: 45px;
     text-transform: uppercase;
-    margin-top: 15%;
+    margin-top: 10%;
+    margin-bottom: 7%;
 }
 
 .about .content{
@@ -278,6 +279,10 @@
   }
 
   @media (max-width: 767px) {
+    .about .heading {
+        margin-top: 30%;
+    }
+
     .about .content{
        flex-direction: column-reverse;
     }
