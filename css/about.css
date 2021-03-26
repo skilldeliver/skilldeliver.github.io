@@ -250,6 +250,11 @@
   }
   
   @media (min-width: 768px) and (max-width: 1024px){
+            
+        .about .heading {
+            margin-top: 20%;
+        }
+
         .affiliations {
             flex-direction: column;
             align-items: center;
@@ -280,7 +285,7 @@
 
   @media (max-width: 767px) {
     .about .heading {
-        margin-top: 30%;
+        margin-top: 40%;
     }
 
     .about .content{
