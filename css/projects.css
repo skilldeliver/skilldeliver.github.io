@@ -77,7 +77,11 @@ article.project img {
 }
 
 article.project button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     color: white;
+    font-weight: bold;
     text-transform: uppercase;
     width: 47%;
     height: 50px;
@@ -110,6 +114,12 @@ article.project button#test-butt:hover {
     cursor: pointer;
 }
 
+article.project button .github-icon, article.project button .test-icon{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+
 article.information {
     position: relative;
     text-align: left;
@@ -140,9 +150,8 @@ article.information .technologies li {
     font-size: 14px;
     padding: 2px 5px;
     margin: 5px 5px;
-
     border-radius: 20px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba( 255, 255, 255, 0.3 );
 }
 
 article.information h1 {
