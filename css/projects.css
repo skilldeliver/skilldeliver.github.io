@@ -142,6 +142,7 @@ article.information .technologies {
     height: 50px;
     padding: 0;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 article.information .technologies li {
@@ -179,4 +180,27 @@ article.information .buttons {
 }
 
 #judge0-bot {
+}
+
+
+@media (max-width: 1200px) {
+    .top-picks {
+        width: 100vw; 
+    }
+}
+
+
+@media (max-width: 767px) {    
+    article.project {
+        width: 100vw;
+    }
+    article.project img {
+        width: 50%;
+        height: 50%;
+    }
+
+    article.information {
+        width: 50%;
+    }
+
 }
