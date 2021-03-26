@@ -226,3 +226,10 @@ body {
         align-items: center;
     }
 }
+
+
+@media (max-width: 767px) {
+    .affiliations .list h3 {
+        font-size: 46px;
+    }
+}
