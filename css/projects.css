@@ -78,17 +78,28 @@ article.project img {
 
 article.project button {
     color: white;
-    width: 150px;
+    text-transform: uppercase;
+    width: 47%;
     height: 50px;
-    background: rgba( 255, 255, 255, 0.10 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 12.0px );
     -webkit-backdrop-filter: blur( 12.0px );
-    border-radius: 10px;
+    border-radius: 20px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
+article.project button#code-butt {
+    background: rgb(255,86,221);
+    background: linear-gradient(45deg, rgba(255,86,221,1) 0%, rgba(67,85,255,1) 100%);
+}
+
+article.project button#test-butt {
+    background: rgb(243,159,99);
+    background: linear-gradient(45deg, rgba(243,159,99,1) 0%, rgba(255,91,216,1) 100%);
+}
+
 article.information {
+    position: relative;
     text-align: left;
     width: 400px;
 
@@ -136,7 +147,11 @@ article.information p {
 }
 
 article.information .buttons {
+    position: absolute;
     display: flex;
+    justify-content: space-between;
+    bottom: 40px;
+    width: 90%;
 }
 
 #judge0-bot {
