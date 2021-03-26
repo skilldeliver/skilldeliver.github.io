@@ -192,15 +192,23 @@ article.information .buttons {
 
 @media (max-width: 767px) {    
     article.project {
+        flex-direction: column-reverse;
         width: 100vw;
     }
     article.project img {
         width: 50%;
-        height: 50%;
+        margin: 0 auto;
     }
 
     article.information {
-        width: 50%;
+        width: 100%;
+        height: 40%;
+    }
+        
+    article.information .buttons {
+        width: 150px;
+        flex-direction: column;
+        right: 0;
     }
 
 }
