@@ -232,4 +232,8 @@ body {
     .affiliations .list h3 {
         font-size: 46px;
     }
+        
+    .affiliations .list ul {
+        width: 80vw;
+    }
 }
