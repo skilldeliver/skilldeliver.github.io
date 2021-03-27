@@ -371,6 +371,29 @@
 	-webkit-animation-iteration-count: infinite;
 }
 
+.xmove {
+	animation-name: xmove;
+	-webkit-animation-name: xmove;
+
+	animation-duration: 35.5s;	
+	-webkit-animation-duration: 35.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+.xmove-right {
+	animation-name: xmove-right;
+	-webkit-animation-name: xmove-right;
+
+	animation-duration: 25.5s;	
+	-webkit-animation-duration: 25.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
 @keyframes floating {
 	0% {
 		transform: translateY(0%);	
@@ -393,4 +416,37 @@
 	100% {
 		-webkit-transform: translateY(0%);
 	}			
+}
+
+
+@-webkit-keyframes xmove {
+	0% {
+		-webkit-transform: translateX(0px);	
+	}
+	50% {
+		-webkit-transform: translatex(-1000px);	
+	}	
+	100% {
+		-webkit-transform: translatex(0px);
+	}			
+}
+
+@-webkit-keyframes xmove-right {
+	0% {
+		-webkit-transform: translateX(0px);	
+	}
+	50% {
+		-webkit-transform: translatex(1000px);	
+	}	
+	100% {
+		-webkit-transform: translatex(0px);
+	}			
+}
+
+
+
+@media (max-width: 767px) {
+	.ball {
+		display: none;
+	}
 }

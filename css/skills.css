@@ -154,13 +154,16 @@
         width: 750px;
         flex-wrap: wrap; 
     }
+   
     .rating {
-    width: 150px;
-    height: 10px;
+        width: 150px;
+        height: 10px;
     }
+
     .skills-list li a{
         font-size: 18px;
     }
+
     .rating .star {
         width: 18px; 
         height: 18px;

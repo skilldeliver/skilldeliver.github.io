@@ -1,4 +1,5 @@
 footer {
+    position: absolute; 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -6,9 +7,9 @@ footer {
     background-image:linear-gradient(0deg, #45148B, #BB4BDE);
     height: 500px;
     position: relative;
-    margin-top: 200px;
+    margin-top: 300px;
     align-items: center;
-    padding: 50% 0;
+    padding-top: 100px;
 }
 
 footer p {
