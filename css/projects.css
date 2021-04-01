@@ -60,12 +60,26 @@ body {
     top: 400px;
 }
 
+#big-ball-3 {
+    width: 500px;
+    height: 500px;
+    right: -300px;
+    top: 1200px;
+}
 
 #mid-ball-1 {
     width: 200px;
     height: 200px;
     left: -250px;
     top: 0; 
+}
+
+
+#mid-ball-2 {
+    width: 120px;
+    height: 120px;
+    left: -250px;
+    top: 1000px; 
 }
 
 #small-ball-1 {
@@ -81,7 +95,14 @@ body {
     right: 20px;
     top: 500px; 
 }
-   
+
+#small-ball-3 {
+    width: 30px;
+    height: 30px;
+    left: -250px;
+    top: 1200px; 
+}
+
 .top-picks {
     display: flex;
     width: 1280px;
