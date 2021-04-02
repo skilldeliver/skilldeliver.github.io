@@ -65,7 +65,6 @@ body {
     height: 500px;
     right: -300px;
     top: 1200px;
-    overflow: hidden;
 }
 
 #mid-ball-1 {
@@ -266,26 +265,33 @@ article.information .buttons {
         margin: 0 auto;
     }
     
+    article.information{
+        padding: 0 0;
+    }
+
     article.information h1{
-        font-size: 22px;
+        font-size: 20px;
         margin: 10px auto;
         width: 100vw;
         text-align: center;
     }
 
     article.information p{
-        width: 100%;
-        font-size: 16px;
+        width: 90%;
+        font-size: 14px;
         text-align: center;
         margin: 10px auto;
     }
-    
-    
     article.information .technologies{
         width: 100%;
         margin: 10px auto;
         justify-content: center;
     }
+    
+    article.information .technologies li{
+        font-size: 12px;    
+    }
+    
         
     article.information {
         width: 100%;
