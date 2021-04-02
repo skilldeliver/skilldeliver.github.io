@@ -279,9 +279,39 @@ nav {
         width: 910px;
     }
 }
-@media (min-width: 1350px) and (max-width:1920px){
-}
+
+@media (min-width:1620px){
+    .hero-waves-mask {
+        width: 100%;
+        height: 550px;
+        bottom: 120px;
+    }
     
+    .hero-waves-mask img {
+        height: 700px;
+        object-fit: cover; 
+    }    
+}
+
+@media (min-width:2320px){ 
+    .hero-waves-mask {
+        width: 100%;
+        height: 550px;
+        bottom: 220px;
+    }
+}
+
+@media (min-width:4320px){ 
+    .hero-waves-mask {
+        width: 100%;
+        height: 550px;
+        bottom: 420px;
+    }
+    .hero-waves-mask img {
+        height: 1200px;
+        object-fit: cover; 
+    }  
+}
 /* larger tablets stylings */
 @media (min-width: 768px) and (max-width: 1024px){
     .hero-text {
@@ -394,8 +424,7 @@ nav {
     }
 
     .hero-waves-mask img {
-        object-fit: cover;
-    
+        object-fit: cover; 
     }    
     
     @keyframes navLinkFade {
