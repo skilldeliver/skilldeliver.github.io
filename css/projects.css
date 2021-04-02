@@ -13,7 +13,7 @@ body {
     color: #cbced4;
     margin: 0 auto;    
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .projects h2 {
@@ -65,6 +65,7 @@ body {
     height: 500px;
     right: -300px;
     top: 1200px;
+    overflow: hidden;
 }
 
 #mid-ball-1 {
