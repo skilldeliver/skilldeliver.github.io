@@ -7,7 +7,6 @@
 	align-items: center;
     justify-content: center;
     flex-direction: column;
-    overflow-y: hidden;
     /* margin-top: 300vh; */
 }
 

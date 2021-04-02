@@ -21,6 +21,7 @@ footer p {
 
 .footer-bottom {
     flex-direction: column;
+    height: 70%;
 }
 .footer-bottom p{
     font-size: 24px;
