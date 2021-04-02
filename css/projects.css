@@ -148,7 +148,7 @@ article.project img {
     transform: translateZ(50px);
 }
 
-article.project button {
+article.project .button {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -162,31 +162,32 @@ article.project button {
     -webkit-backdrop-filter: blur( 12.0px );
     border-radius: 20px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-decoration: none;
 }
 
-article.project button#code-butt {
+article.project .button#code-butt {
     background: rgb(255,86,221);
     background: linear-gradient(45deg, rgba(255,86,221,1) 0%, rgba(67,85,255,1) 100%);
 }
 
-article.project button#code-butt:hover {
+article.project .button#code-butt:hover {
     -webkit-box-shadow: 0px 5px 30px -1px rgba(244,86,222,0.58); 
     box-shadow: 0px 5px 30px -1px rgba(244,86,222,0.58);
     cursor: pointer;
 }
 
-article.project button#test-butt {
+article.project .button#test-butt {
     background: rgb(243,159,99);
     background: linear-gradient(45deg, rgba(243,159,99,1) 0%, rgba(255,91,216,1) 100%);
 }
 
-article.project button#test-butt:hover {
+article.project .button#test-butt:hover {
     -webkit-box-shadow: 0px 5px 30px -1px rgba(231,141,94,0.58); 
     box-shadow: 0px 5px 30px -1px rgba(231,141,94,0.58);
     cursor: pointer;
 }
 
-article.project button .github-icon, article.project button .test-icon{
+article.project .button .github-icon, article.project .button .test-icon{
     width: 30px;
     height: 30px;
     margin-top: 5px;
@@ -251,10 +252,6 @@ article.information .buttons {
     width: 90%;
 }
 
-#judge0-bot {
-}
-
-
 @media (max-width: 1200px) {
     .top-picks {
         width: 100vw; 
@@ -313,7 +310,7 @@ article.information .buttons {
         margin: 0 auto;
     }
     
-    article.information button {
+    article.information .button {
         width: 40%;
         text-align: center;
     }
