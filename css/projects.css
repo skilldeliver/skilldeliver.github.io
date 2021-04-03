@@ -31,7 +31,6 @@ body {
     padding: 0;
     margin: 100px auto;
     font-size: 64px;
-    color: #4C3A7C;
 }
 
 .bg-ball {
@@ -217,7 +216,6 @@ article.information .technologies {
     padding: 0;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 7%;
 }
 
 article.information .technologies li {
@@ -250,7 +248,7 @@ article.information .buttons {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    bottom: 20px;
+    bottom: 40px;
     width: 90%;
 }
 
@@ -268,8 +266,8 @@ article.information .buttons {
     }
 
     article.project .illustration {
-        width: 50%;
-        height: 40%;
+        width: 35vw;
+        height: 35vw;
         margin: 0 auto;
     }
     
