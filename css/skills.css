@@ -44,6 +44,7 @@
     font-size: 1.5rem;
     color: #585858;
     margin-bottom: 45px;
+    margin-top: 45px;
 }
 
 .container {
@@ -190,4 +191,13 @@
         width: 90vw;
         flex-direction: column;
     }
+    .skills-list li {
+        display: flex;
+        justify-content: center;
+    }
+
+    #chartdiv, #wakatime {
+        display: none;
+    }
+       
 }
