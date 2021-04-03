@@ -10,6 +10,15 @@
     /* margin-top: 300vh; */
 }
 
+#chartdiv {
+    width: 100%;
+    height: 500px;
+    font-size: 14px;
+    color:rgb(129, 129, 129);
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 /* TODO if script for entrence is present    */
 /* .hide-content {
@@ -20,7 +29,7 @@
     /* color: #373737; */
     font-size: 45px;
     text-transform: uppercase;
-    margin-top: 10%;
+    margin: 8% auto;
     font-family: 'Baloo Paaji 2', cursive;
     background: linear-gradient(0deg, #774deb, #6f77e4);
     background-clip: text;
