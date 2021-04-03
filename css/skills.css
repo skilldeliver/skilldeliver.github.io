@@ -43,6 +43,7 @@
     text-transform: uppercase;
     font-size: 1.5rem;
     color: #585858;
+    margin-bottom: 45px;
 }
 
 .container {
@@ -59,6 +60,7 @@
     height: 100%; */
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .skills-list .item img {
@@ -71,7 +73,7 @@
 
 .skills-list li {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     height: 100%;
     width: 100%;
@@ -81,7 +83,7 @@
 }
 
 .skills-list li a{
-    font-size: 14px;
+    font-size: 18px;
     text-align: start;
     white-space: nowrap;
     text-decoration: none;
