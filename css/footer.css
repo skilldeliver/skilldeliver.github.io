@@ -33,6 +33,7 @@ footer .social-media {
     justify-content: space-between;
     width: 300px;
     margin: 75px auto;
+    font-size: 0px;
 }
 
 footer .social-media > a > div  {

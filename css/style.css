@@ -173,6 +173,7 @@ nav {
 /* social icons styling */
 
 .social-media {
+    font-size: 0;
     position: absolute;
     margin-top: 200px;
     top: 0;

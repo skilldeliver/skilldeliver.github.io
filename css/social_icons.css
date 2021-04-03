@@ -23,6 +23,7 @@ body {
     height: 60px;
     background-color: white;
     opacity: 0.7;
+    font-size: 0px;
 }
 
 .social-media > div:hover {
