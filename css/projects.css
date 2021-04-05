@@ -261,6 +261,10 @@ article.information .buttons {
 
 
 @media (max-width: 767px) {
+    .projects .wave-transition {
+        width: 1200px;
+    }
+
     .bg-ball {
         display: none;
     }
