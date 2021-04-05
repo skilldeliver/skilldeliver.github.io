@@ -63,21 +63,18 @@ body {
 
 
 .affiliations #experience h4.place {
-    font-size: 20px;
     text-transform: uppercase;
     text-align: center;
     color: #63D2A6;
 }
 
 .affiliations #education h4.place {
-    font-size: 20px;
     text-transform: uppercase;
     text-align: center;
     color: #FF7A00;
 }
 
 .affiliations #groups h4.place {
-    font-size: 20px;
     text-transform: uppercase;
     text-align: center;
     color: #9069DA;
@@ -113,7 +110,7 @@ body {
 
 .affiliations #groups .illustration {
     width: 160px;
-    top: -40px;
+    top: -30px;
     left: 95px;
 }
 
@@ -199,7 +196,7 @@ body {
 		transform: translateY(0%);	
 	}
 	50% {
-		transform: translateY(20%);	
+		transform: translateY(30%);	
 	}	
 	100% {
 		transform: translateY(0%);
@@ -229,11 +226,38 @@ body {
 
 
 @media (max-width: 767px) {
+    .affiliations .list h4 {
+        font-size: 16px;
+    }
+    
+    .affiliations .list p {
+        font-size: 14px;
+    }
+
     .affiliations .list h3 {
         font-size: 46px;
     }
         
     .affiliations .list ul {
         width: 80vw;
+    }
+
+    .affiliations #experience .illustration {
+        position: absolute;
+        height: 160px;
+        top: -60px;
+        left: 20%;
+    }
+    
+    .affiliations #education .illustration {
+        width: 230px;
+        top: -60px;
+        left: 10%;
+    }   
+    
+    .affiliations #groups .illustration {
+        width: 160px;
+        top: -30px;
+        left: 25%;
     }
 }
