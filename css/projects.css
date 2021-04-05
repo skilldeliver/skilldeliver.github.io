@@ -31,6 +31,7 @@ body {
     padding: 0;
     margin: 100px auto;
     font-size: 64px;
+    color: #4C3A7C;
 }
 
 .bg-ball {
@@ -259,7 +260,11 @@ article.information .buttons {
 }
 
 
-@media (max-width: 767px) {    
+@media (max-width: 767px) {
+    .bg-ball {
+        display: none;
+    }
+
     article.project {
         flex-direction: column-reverse;
         width: 100vw;
@@ -305,8 +310,9 @@ article.information .buttons {
     }
         
     article.information .buttons {
+        justify-content: space-evenly;
         position: static;
-        width: 70%;
+        width: 90%;
         margin: 0 auto;
     }
     
