@@ -163,9 +163,19 @@ body {
 
 	animation-duration: 5.5s;	
 	-webkit-animation-duration: 5.5s;
-
+    
 	animation-iteration-count: infinite;
 	-webkit-animation-iteration-count: infinite;
+}
+
+.edu-floating{
+    animation-name: laptop-floating;
+    -webkit-animation-name: laptop-floating;
+
+    animation-duration: 10.5s;	
+    -webkit-animation-duration: 10.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
 }
 
 @keyframes laptop-floating {
@@ -178,17 +188,6 @@ body {
 	100% {
 		transform: translateY(0%);
 	}			
-}
-
-.edu-floating{
-	animation-name: edu-floating;
-	-webkit-animation-name: edu-floating;
-
-	animation-duration: 5.5s;	
-	-webkit-animation-duration: 5.5s;
-
-	animation-iteration-count: infinite;
-	-webkit-animation-iteration-count: infinite;
 }
 
 @keyframes edu-floating {
