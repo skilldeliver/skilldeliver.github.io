@@ -65,7 +65,7 @@ body {
 .affiliations #experience h4.place {
     text-transform: uppercase;
     text-align: center;
-    color: #63D2A6;
+    color: #278660;
 }
 
 .affiliations #education h4.place {
@@ -83,7 +83,7 @@ body {
 .affiliations .list p {
     text-align: center;
     margin-top: 5px;
-    color: #7B7B7B;
+    color: #6E6E6E;
 }
 
 .affiliations .list hr {
