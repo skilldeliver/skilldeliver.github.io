@@ -90,7 +90,7 @@ h1 .highlight {
 
 .hero-animation {
     position: absolute;
-    top: 0;
+    top: -100px;
     right: 0;
     width: 50%;
     z-index: -1;
