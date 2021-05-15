@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background: rgb(129,64,235);
+    background: linear-gradient(45deg, rgba(129,64,235,1) 0%, rgba(64,132,235,1) 100%);    
+    color: #D9E9FF;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+nav {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.brand img {
+    margin-right: 20px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+h1 {
+    margin-top: 100px;
+    font-size: 72px;
+    font-weight: bolder;
+    color: #525252;
+}
+
+h1 .highlight {
+    color: #D229EE;
+}
+
+.icon-scroll {
+    margin: 150px auto;
+    width: 1em;
+	height: 3.125em;
+	transform: translateX(-50%) scale(2);
+	z-index: 99999;
+}
+
+.icon-arrows::after,
+.icon-arrows::before {
+  content: '';
+}
+.icon-arrows span,
+.icon-arrows::after,
+.icon-arrows::before {
+	display: block;
+	width: 0.315em;
+	height: 0.315em;
+	border-right: 1px solid rgba(82, 82, 82, 0.8);
+	border-bottom: 1px solid rgba(82, 82, 82, 0.8);
+	margin: 0 0 0.125em 0.315em;
+	transform: rotate(45deg);
+  animation: mouse-scroll 1s infinite;
+	animation-direction: alternate;
+}
+
+.icon-arrows::before {
+	margin-top: 0.315em;
+	animation-delay: .1s;
+}
+
+.icon-scroll span {
+	animation-delay: .2s;
+}
+
+.icon-arrows::after {
+	animation-delay: .3s;
+}
+
+.icon-scroll .mouse {
+	height: 1.375em;
+	width: .875em;
+	border: 1px solid rgba(82, 82, 82, 0.8);
+	border-radius: 2em;
+}
+
+.icon-scroll .wheel {
+  position: relative;
+  display: block;
+  height: 0.1875em;
+  width: 0.1875em;
+  margin: 0.1875em auto 0;
+  background: rgba(82, 82, 82, 0.8);
+  animation: mouse-wheel 1.2s ease infinite;
+  border-radius: 50%;
+}
+
+@keyframes mouse-wheel {
+	0% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(.375em);
+	}
+}
+
+@keyframes mouse-scroll {
+	0%   { opacity: 0; }
+	50%  { opacity: .5; }
+	100% { opacity: 1; }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){ 
+    header {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 64px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    header {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+
+}
