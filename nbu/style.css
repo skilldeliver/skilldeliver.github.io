@@ -6,12 +6,7 @@
 body {
     font-family: Roboto, sans-serif;
     width: 100%;
-}
-
-main {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1920px;
+    background-color: #F5F7FC;
 }
 
 header {
@@ -53,6 +48,32 @@ nav a {
 
 nav a:hover {
     color: white;
+}
+
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+main section {
+    margin: 200px 0;
+}
+
+section h2 {
+    color: #7829EE;
+    font-size: 64px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+section p {
+    color: #757575;
+    font-size: 24px;
+    background-color: white;
+    padding: 24px 24px;
+    width: 70%;
 }
 
 h1 {
@@ -141,21 +162,68 @@ h1 .highlight {
 	100% { opacity: 1; }
 }
 
+/* font size scales:
+- 72
+- 64
+- 48
+- 36
+- 24
+- 18
+- 14
+- 13
+- 12
+
+*/
+
 @media (min-width: 768px) and (max-width: 1024px){ 
-    header {
-        font-size: 18px;
-    }
     h1 {
         font-size: 64px;
     }
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-    header {
-        font-size: 14px;
+    section h2 {
+        font-size: 48px;
     }
+    header {
+        font-size: 18px;
+    }
+    section p {
+        font-size: 18px;
+    }
+
+}
+@media (min-width: 481px) and (max-width: 767px) {
     h1 {
         font-size: 48px;
     }
-
+    section h2 {
+        font-size: 36px;
+    }
+    header {
+        font-size: 14px;
+    }
+    header img {
+        width: 40px;
+    }
+    section p {
+        font-size: 14px;
+    }
+    
 }
+
+@media (max-width: 480px) { 
+    h1 {
+        font-size: 36px;
+    }
+    section h2 {
+        font-size: 24px;
+    }
+    header {
+        font-size: 13px;
+    }
+    header img {
+        width: 30px;
+        margin-right: 5px;
+    }
+    section p {
+        width: 90%;
+    }
+} 
