@@ -52,6 +52,7 @@ nav a:hover {
 
 
 main {
+    position: relative;
     width: 90%;
     margin: 0 auto;
     max-width: 1920px;
@@ -85,6 +86,14 @@ h1 {
 
 h1 .highlight {
     color: #D229EE;
+}
+
+.hero-animation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    z-index: -1;
 }
 
 .icon-scroll {
