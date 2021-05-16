@@ -77,18 +77,19 @@ section p {
     width: 70%;
 }
 
-section.todo .container {
-    display: flex;
+
+section a {
+    color: #D229EE;
+    text-decoration: none;
 }
 
-section.todo .container img {
-    display: block;
-    width: 20%;
-    height: 20%;
+section a:hover {
+    text-decoration: underline;
 }
 
-.donut {
-    opacity: 0.6;
+.video {
+    width: 80%;
+    height: 640px;
 }
 
 h1 {
