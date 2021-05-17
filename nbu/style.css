@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Roboto, sans-serif;
     width: 100%;
@@ -116,11 +120,13 @@ h1 .highlight {
 }
 
 .icon-scroll {
+    display: block;
     margin: 150px auto;
     width: 1em;
 	height: 3.125em;
 	transform: translateX(-50%) scale(2);
 	z-index: 99999;
+    cursor: pointer;
 }
 
 .icon-arrows::after,
