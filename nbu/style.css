@@ -79,8 +79,9 @@ section p {
     background-color: white;
     padding: 24px 24px;
     width: 70%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
 }
-
 
 section a {
     color: #D229EE;
