@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
     <!-- HTML Meta Tags -->
     <title>Vladislav Mihov | Developer</title>
     <meta name="description" content="My website & personal portfolio - projects and skills">
@@ -13,7 +14,8 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Vladislav Mihov | Full Stack Developer">
     <meta property="og:description" content="My website & personal portfolio - information, projects and skills">
-    <meta property="og:image" content="https://raw.githubusercontent.com/skilldeliver/skilldeliver.github.io/main/assets/preview-2.png">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/skilldeliver/skilldeliver.github.io/main/assets/preview-2.png">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
@@ -21,417 +23,28 @@
     <meta property="twitter:url" content="https://www.vmihov.com/">
     <meta name="twitter:title" content="Vladislav Mihov | Full Stack Developer">
     <meta name="twitter:description" content="My website & personal portfolio - information, projects and skills">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/skilldeliver/skilldeliver.github.io/main/assets/preview-2.png">
+    <meta name="twitter:image"
+        content="https://raw.githubusercontent.com/skilldeliver/skilldeliver.github.io/main/assets/preview-2.png">
 
     <link rel="shortcut icon" type="image/jpg" href="assets/favicon.png">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/animation.css">
-    <link rel="stylesheet" href="css/bio.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/liquid.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <link rel="stylesheet" href="css/skills.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/waves.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@700;800&display=swap" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="logo">Vladislav Mihov</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#" id="contact-link">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="hero-home">
-            <div class="hero-bg">
-                <img class="hero-pattern" src="./assets/img/hero-pattern-bg.png" alt="">
-            </div>
-            <div class="hero-text">
-                <h1>Looking for me?</h1>
-                <p>You are at my website & personal portfolio, now hurry up and:</p>
-                <a href="#projects">
-                    <button type="button" class="go-to-action expandUp">Go to my work!</button>
-                </a>
-            </div>
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/mihov/" target="_blank" rel="noopener">
-                    LinkedIn profile link
-                    <div class="linkedin">
-                        <img src="./assets/linkedin-logo.svg" alt="">
-                    </div>
-                </a>
-                <a href="https://github.com/skilldeliver" target="_blank" rel="noopener">
-                    GitHub profile link
-                    <div class="github">
-                        <img id="github-logo" src="./assets/github-logo.svg" alt="">
-                    </div>
-                </a>
-                <a href="https://discord.gg/QuyNpc2Ukz" target="_blank" rel="noopener">
-                    Discord server link
-                    <div class="twitter">
-                        <img src="./assets/discord-logo.svg" alt="">
-                    </div>
-                </a>
-            </div>
-            <div class="hero-waves-mask floating">
-                <img src="./assets/hero-waves.svg" alt="White wave vector image">
-            </div>
-        </section>
-        <section class="contact" id="contact">
-            <form id="contact-form" class="kwes-form" method="POST" action="https://kwes.io/api/foreign/forms/1KxVc2eR7wU7WRTmksXf">
-                <div class="illustration">
-                    <img src="assets/contact.svg" alt="">
-                </div>
-                <a href="#" class="close" id="close-link"></a>
-                <heading class="contact-heading">
-                    <h3>Send me a love letter, tnx</h3>
-                </heading>
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" rules="required">
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" rules="required|email|max:255">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rules="required"></textarea>
-                <button type="submit">Send!</button>
-            </form>
-        </section>
-        <section class="about">
-            <h2 class="heading typewriter-text" id="about">About me</h2>
-            <div class="content">
-                <img class="about-personal-photo" src="./assets/img/vladislav-mihov.png" alt="Personal photo of Vladislav Mihov">
-                <div class="text">
-                    All my life I've been fighting with <a href="https://en.wikipedia.org/wiki/Spinal_muscular_atrophy" target="_blank" rel="noopener noreferrer">muscular atrophy</a> which is a devastating disease affecting a person's physical abilities.
-                    This part of my life is not bringing me down but it motivates me to do more things, to love the people around me, and to <strong>enjoy life!</strong>
-                    In my teens, I had a passion for <strong>painting and drawing</strong> but later on I switched to <strong>coding and computer science</strong> and ever since then I haven't stopped learning and improving my skills.
-            Except for coding, I enjoy <strong>reading</strong>, playing <strong>chess</strong> and <strong>designing</strong> stuff, feel free to check my <a href="https://www.goodreads.com/user/show/90417177-vladislav-mihov" target="_blank" rel="noopener noreferrer">Goodreads</a>, <a href="https://lichess.org/@/skilldeliver" target="_blank" rel="noopener noreferrer">Lichess</a>, and <a href="https://instagram.com/killtheliver" target="_blank" rel="noopener noreferrer">Instagram</a> accounts respectively for each activity!
-                </div>
-            </div>
-            <div class="affiliations">
-                <div id="experience" class="list">
-                    <div class="particles" id="particles-experience">
-                        <h3>Experience</h3>
-                        <img src="assets/about/experience-illustration.png" alt="" class="illustration floating">
-                        <ul>
-                            <li>
-                                <h4 class="position">Freelance Developer</h4>
-                                <hr>
-                                <h4 class="place">Vmihov.com</h4>
-                                <p class="date">2021 Apr - Present</p>
-                                <hr>
-                            </li>
-                            <li>
-                                <h4 class="position">Junior Python Developer</h4>
-                                <hr>
-                                <h4 class="place">Strypes</h4>
-                                <p class="date">2020 Jan - 2021 Apr</p>
-                                <hr>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="education" class="list">
-                    <h3>Education</h3>
-                    <img src="assets/about/education-illustration.png" alt="" class="edu-floating illustration">
-                    <ul>
-                        <li>
-                            <h4 class="position">COMPUTER SCIENCE STUDENT</h4>
-                            <hr>
-                            <h4 class="place">NBU</h4>
-                            <p class="date">2019 Oct - Present</p>
-                            <hr>
-                        </li>
-                        <li>
-                            <h4 class="position">ARTS HIGH SCHOOL STUDENT</h4>
-                            <hr>
-                            <h4 class="place">SUKM</h4>
-                            <p class="date">2007 Sep - 2019 June</p>
-                            <hr>
-                        </li>
-                    </ul>
-                </div>
-                <div id="groups" class="list">
-                    <h3>Groups</h3>
-                    <img src="assets/about/groups-illustration.png" alt="" class="illustration floating">
-                    <ul>
-                        <li>    
-                            <h4 class="position">STUDENT REPRESENTATIVE</h4>
-                            <hr>
-                            <h4 class="place">NBU STUDENT COUNCIL</h4>
-                            <p class="date">2021 Jun - Now</p>
-                            <hr>
-                        </li>
-                        <li>    
-                            <h4 class="position">VOLUNTEER</h4>
-                            <hr>
-                            <h4 class="place">PODKREPI.BG</h4>
-                            <p class="date">2020 Nov - 2021 Sep</p>
-                            <hr>
-                        </li>
-                        <li>
-                            <h4 class="position">DISCORD BOT DEVELOPER</h4>
-                            <hr>
-                            <h4 class="place">JUDGE0</h4>
-                            <p class="date">2019 Sep - 2020 Jul</p>
-                            <hr>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="projects">
-            <div class="wave-transition"></div>
-            <h2 id="projects">Projects</h2>
-            <section class="top-picks">
-                <div id="big-ball-1" class="bg-ball floating"></div>
-                <div id="big-ball-2" class="bg-ball floating"></div>
-                <div id="big-ball-3" class="bg-ball floating"></div>
-                <div id="mid-ball-1" class="bg-ball floating"></div>
-                <div id="mid-ball-2" class="ball xmove-right"></div>
-                <div id="small-ball-1" class="ball xmove-right"></div>
-                <div id="small-ball-2" class="ball xmove"></div>
-                <div id="small-ball-3" class="ball xmove-right"></div>
-    
-                <article class="project" id="judge0-bot" data-tilt>
-                    <article class="information">
-                        <h1>Judge0 <br> Discord Bot</h1>
-                        <p>Runs code directly in the chat in more than 30 programming languages.</p>
-                        <ul class="technologies">
-                            <li>Python</li>
-                            <li>discord.py</li>
-                            <li>PostgreSQL</li>
-                            <li>Judge0 API</li>
-                            <li>Docker</li>
-                        </ul>
-                        <div class="buttons">
-                            <a target="_blank" href="https://github.com/judge0/discord-bot" class="button code-butt" rel="noopener"><img src="assets/github-icon.svg" alt="" class="github-icon"> View code</a>
-                            <a target="_blank" href="https://discord.com/invite/GRc3v6n" class="button test-butt" rel="noopener"><img src="assets/live-test-icon.svg" alt="" class="test-icon">Live test</a>
-                        </div>
-                    </article>
-                    <img class="illustration" src="assets/judge0-bot.png" alt="">
-                </article>
-                <article class="project" data-tilt>
-                    <article class="information">
-                        <h1>it Bulgaria</h1>
-                        <p>Online IT community centered around mentorship, chat and events</p>
-                        <ul class="technologies">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>TailwindCSS</li>
-                            <li>Figma</li>
-                            <li>Discord</li>
-                        </ul>
-                        <div class="buttons">
-                            <a target="_blank" href="https://github.com/IT-BG/it-bg.github.io" class="button code-butt" rel="noopener"><img src="assets/github-icon.svg" alt="" class="github-icon"> View code</a>
-                            <a target="_blank" href="https://it-bg.github.io/" class="button test-butt" rel="noopener"><img src="assets/live-test-icon.svg" alt="" class="test-icon">Live test</a>
-                        </div>
-                    </article>
-                    <img class="illustration" src="assets/itbg.png" alt="">
-                </article>
-                <article class="project" id="judge0-bot" data-tilt>
-                    <article class="information">
-                        <h1>CLIMATE CHANGE <br> VIDEO GAME</h1>
-                        <p>Video game made by a team of 2 developers for an online competition.</p>
-                        <ul class="technologies">
-                            <li>Python</li>
-                            <li>Pygame</li>
-                            <li>Design Patterns</li>
-                            <li>Docker</li>
-                        </ul>
-                        <div class="buttons">
-                            <a target="_blank" href="https://github.com/python-discord/code-jam-5/tree/master/various_vipers" class="button code-butt" rel="noopener"><img src="assets/github-icon.svg" alt="" class="github-icon"> View code</a>
-                            <a target="_blank" href="https://youtu.be/drBKNU73Ss4?t=13418" class="button test-butt" rel="noopener"><img src="assets/live-test-icon.svg" alt="" class="test-icon">Live video</a>
-                        </div>
-                    </article>
-                    <img class="illustration" src="assets/climate-change.png" alt="">
-                </article>
-            </section>
-        </section>
-        <section class="skills">
-            <h2 class="heading" id="skills">Skills</h2>
-            <div class='box'>
-                <div class='wave -one'></div>
-                <div class='wave -two'></div>
-                <div class='wave -three'></div>
-              </div>
-            <div class="container">
-                <div class="languages">
-                    <h3>Languages</h3>
-                    <ul class="skills-list">
-                        <li><div class="item"><img class="icon" src="assets/img/logos/python.png" alt=""><a href="http://">Python</a></div></li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/javascript.png" alt=""><a href="http://">JavaScript</a>
-                            </div>
-                        </li>
-                        <li><div class="item"><img class="icon" src="assets/img/logos/html.jpg" alt=""><a href="http://">HTML & CSS</a></div></li>
-                        <li><div class="item"><img class="icon" src="assets/img/logos/sql.png" alt=""><a href="http://">SQL</a></div></li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/latex.png" alt=""><a href="http://">LaTeX</a></div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/csharp.png" alt=""><a href="http://">C#</a></div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/cpp.png" alt=""><a href="http://">C++</a></div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/bash.png" alt=""><a href="http://">Bash</a></div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/java.png" alt=""><a href="http://">Java</a></div>
-                        </li>
-                        </ul>
-                    </div>
-                    <div class="frameworks">
-                        <h3>Frameworks</h3>
-                        <ul class="skills-list">
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/flask.png" alt=""><a href="http://">Flask</a></div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/react.png" alt=""><a href="http://">React</a></div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/django.png" alt=""><a href="http://">Django</a></div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/fastapi.png" alt=""><a href="http://">FastAPI</a></div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/discord.png" alt=""><a href="http://">discord.py</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/bootstrap.png" alt=""><a href="http://">Bootstrap</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/matplotlib.png" alt=""><a
-                                    href="http://">matplotlib</a></div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/selenium.png" alt=""><a href="http://">Selenium</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/scrapy.png" alt=""><a href="http://">Scrapy</a></div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="tools">
-                    <h3>Tools</h3>
-                    <ul class="skills-list">
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/git.png" alt=""><a href="http://">git</a></div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/docker.png" alt=""><a href="http://">Docker</a></div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/linux.png" alt=""><a href="http://">Linux</a></div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/figma.svg" alt=""><a href="http://">Figma</a></div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/github.png" alt=""><a href="http://">GitHub</a></div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/gcp.png" alt=""><a href="http://">GCP</a></div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/photoshop.png" alt=""><a href="http://">Ps & Ai</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="other">
-                    <h3>Other</h3>
-                    <ul class="skills-list">
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/open-mind.png" alt=""><a
-                                    href="http://">Open-mindness</a></div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/communication.png" alt=""><a
-                                    href="http://">Communication</a></div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/motivation.png" alt=""><a
-                                    href="http://">Motivation</a></div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/oop.png" alt=""><a href="http://">OOP</a></div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/rdbms.png" alt=""><a href="http://">RDBMS</a></div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/tdd.png" alt=""><a href="http://">TDD</a></div>
-                        </li>
-                        <li>
-                            <div class="item"><img class="icon" src="assets/img/logos/scrum.png" alt=""><a href="http://">Agile Scrum</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-                <h2 id="wakatime" class="heading">Wakatime Stats</h2>
-                <div id="chartdiv"></div>
-        </section>
-    </main>
-    <footer>
-        <p>Thank you for your attention!</p>
-        <div class="footer-bottom">
-            <p>Don't forget to add me on my social media</p>
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/mihov/" target="_blank" rel="noopener">
-                    LinkedIn profile link
-                    <div class="linkedin">
-                        <img src="./assets/linkedin-logo.svg" alt="">
-                    </div>
-                </a>
-                <a href="https://github.com/skilldeliver" target="_blank" rel="noopener">
-                    GitHub profile link
-                    <div class="github">
-                        <img id="github-logo" src="./assets/github-logo.svg" alt="">
-                    </div>
-                </a>
-                <a href="https://discord.gg/QuyNpc2Ukz" target="_blank" rel="noopener">
-                    Discord server link
-                    <div class="twitter">
-                        <img src="./assets/discord-logo.svg" alt="">
-                    </div>
-                </a>
-            </div>
+    <main class="home">
+        <img src="assets/bg.jpg" alt="city background image" class="bg">
+        <div class="panel">
+            <nav>
+                <img class="logo" src="assets/logo.png" alt="logo personal brand">
+                <p class="name">Vladislav Mihov</p>
+            </nav>
+            <h1>GAINING SKILLS, BUILDING STUFF AND MEETING PEOPLE.</h1>
+            <p class="label">current projects:</p>
         </div>
-    </footer>
-    <script src="https://kwes.io/v2/kwes-script.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
-    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
-    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
-    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script> 
-    <script src="./scripts/app.js"></script>
-    <script src="./scripts/card.js"></script>
-    <script src="./scripts/chart.js"></script>
+    </main>
 </body>
+
 </html>
