@@ -35,12 +35,14 @@ h1 {
 }
 
 .panel {
+    position: relative;
     margin: 0 auto;
     width: 80%;
     max-width: 1296px;
     padding: 70px;
     background: rgba(113, 28, 145, 0.15);
     border: 3px solid rgba(255, 255, 255, 0.28);
+    border-bottom: 0px;
     backdrop-filter: blur(10px);
 }
 
@@ -63,3 +65,28 @@ h1 {
     font-size: 36px;
     color: rgba(255, 255, 255, 0.7);
 }   
+
+.projects {
+    margin: 0 auto;
+    background: rgba(9, 24, 51, 0.77);
+    backdrop-filter: blur(20px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 0px;
+    width: 100%;
+    max-width: 1557px;
+    min-height: 256px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
