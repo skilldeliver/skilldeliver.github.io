@@ -9,20 +9,30 @@ html{
 }
 
 body {
+
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
     color: white;
     background-color: black;
     font-family: 'Montserrat';
 }
 
+.tags {
+
+    display: flex;
+    justify-content: space-between;
+}
+
 main {
-    width: 100%;
-    min-height: 100vh;
+    margin: 70px 0 70px 0;
 }
 
 img.bg {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     position: absolute;
     z-index: -1;
     top: 0;
@@ -39,7 +49,7 @@ h1 {
     margin: 0 auto;
     width: 80%;
     max-width: 1296px;
-    padding: 70px;
+    padding: 50px;
     background: rgba(113, 28, 145, 0.15);
     border: 3px solid rgba(255, 255, 255, 0.28);
     border-bottom: 0px;
@@ -103,8 +113,12 @@ h1 {
     justify-content: center;
 }
 
+.projects .list .item li:hover{
+    background-color: rgba(255, 255, 255, 0.030);
+}
+
 .projects .list .item:nth-of-type(1)  {
-    border-left: 3px solid rgba(255, 255, 255, 0.28);
+        border-left: 3px solid rgba(255, 255, 255, 0.28);
 }
 
 .projects .list .item .logo{
@@ -131,4 +145,25 @@ h1 {
 .projects .list a{
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
+}
+
+.panel-bottom {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 125px;
+    max-width: 1296px;
+    padding: 50px;
+    background: rgba(113, 28, 145, 0.15);
+    border: 3px solid rgba(255, 255, 255, 0.28);
+    border-top: 0px;
+    backdrop-filter: blur(10px);
+}
+
+
+.socials {
+    margin-left: auto;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
 }
