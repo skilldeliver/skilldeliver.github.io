@@ -1,35 +1,30 @@
-.scroll-tags {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
 .tags{
   position: relative;
   animation: simple 50s infinite linear;
 }
 
 .tags-2 {
-  position: relative;
-  /* animation: simple2 50s infinite linear; */
+  display: flex;
+  justify-content: space-around;
+    animation: simple 50s infinite linear;
 }
 
 
 @keyframes simple {
   0% {
-    left: 0;
+   -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+ 
   }
   100% {
-    left: -100%;  
-  }
-}
-
-
-@keyframes simple2 {
-  0% {
-    left: 100%;
-  }
-  100% {
-    left: 0;  
+   -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+ 
   }
 }
