@@ -9,10 +9,10 @@ html{
 }
 
 body {
-
     display: flex;
     width: 100%;
     min-height: 100vh;
+    overflow-x: hidden;
     flex-direction: column;
     justify-content: center;
     color: white;
@@ -20,10 +20,26 @@ body {
     font-family: 'Montserrat';
 }
 
-.tags {
+.scroll-tags {
+    display: flex;
+    overflow: hidden;
+    width: 200%;
+}
 
+.tags {
+    width: 50%;
     display: flex;
     justify-content: space-between;
+    list-style-type: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.tags-2 {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 main {

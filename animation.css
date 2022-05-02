@@ -1,0 +1,35 @@
+.scroll-tags {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.tags{
+  position: relative;
+  animation: simple 50s infinite linear;
+}
+
+.tags-2 {
+  position: relative;
+  /* animation: simple2 50s infinite linear; */
+}
+
+
+@keyframes simple {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;  
+  }
+}
+
+
+@keyframes simple2 {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0;  
+  }
+}
