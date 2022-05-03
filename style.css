@@ -179,6 +179,7 @@ h1 {
 }
 
 .panel-bottom {
+    display: flex;
     position: relative;
     margin: 0 auto;
     width: 90%;
@@ -251,7 +252,16 @@ h1 {
     h1 {
         font-size: 24px;
     }
+    .panel {
+        padding: 30px 10px;
+    }
     .panel nav .name, .panel .label{
         font-size: 18px;
+    }
+
+    .panel-bottom {
+        padding: 0;
+        justify-content: center;
+        align-items: center;
     }
 } 
