@@ -216,12 +216,26 @@ h1 {
     }
     .projects .list {
         flex-direction: column;
+        align-items: center;
         height: 100%;
     }
-
-
-
+    .projects .list .item li{
+        border-top: 3px solid rgba(255, 255, 255, 0.28);
+        border-right: 0;
+    }
+    .projects .list .item:nth-of-type(1) > li  {
+        border-top: 0;
+    }
+    .projects .list .item:nth-of-type(1){
+        border-left: 0;
+    }
+    .projects .list .item{
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+    }
 }
+
 @media (max-width: 767px) {
     h1 {
         font-size: 24px;
