@@ -11,8 +11,11 @@ html{
 body {
     display: flex;
     width: 100%;
+    height: 100%;
+    min-width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
+    position: relative;
     flex-direction: column;
     justify-content: space-between;
     color: white;
@@ -23,15 +26,15 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    -webkit-overflow-scrolling: touch;
 
 }
 
 .scroll-tags {
     display: flex;
-    overflow: hidden;
-    width: 200%;
-    min-width: 3000px;
-    margin: 25px 0;
+    /* position: absolute; */
+    /* min-width: 3000px;
+    margin: 25px 0; */
 }
 
 .tags {
