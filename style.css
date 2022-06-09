@@ -21,7 +21,7 @@ body {
     color: white;
     background-color: black;
     font-family: 'Montserrat';
-    background-image: url("assets/bg.jpg");
+    background-image: url("assets/bg.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
