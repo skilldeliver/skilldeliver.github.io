@@ -21,7 +21,7 @@ body {
     color: white;
     background-color: black;
     font-family: 'Montserrat';
-    background-image: url("assets/bg.png");
+    background-image: url("assets/bg.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -112,7 +112,7 @@ h1 {
 
 .projects {
     margin: 0 auto;
-    background: rgba(9, 24, 51, 0.77);
+    background: rgba(40, 9, 51, 0.77);
     backdrop-filter: blur(20px);
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 0px;
