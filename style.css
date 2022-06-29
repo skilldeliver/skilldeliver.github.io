@@ -84,7 +84,7 @@ h1 {
     width: 90%;
     max-width: 1296px;
     padding: 50px;
-    background: rgba(113, 28, 145, 0.15);
+    background: rgba(138, 138, 138, 0.15);
     border: 3px solid rgba(255, 255, 255, 0.28);
     border-bottom: 0px;
     backdrop-filter: blur(10px);
@@ -112,7 +112,7 @@ h1 {
 
 .projects {
     margin: 0 auto;
-    background: rgba(40, 9, 51, 0.77);
+    background: rgba(58, 58, 58, 0.77);
     backdrop-filter: blur(20px);
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 0px;
@@ -189,7 +189,7 @@ h1 {
     height: 125px;
     max-width: 1296px;
     padding: 50px;
-    background: rgba(113, 28, 145, 0.15);
+    background: rgba(138, 138, 138, 0.15);
     border: 3px solid rgba(255, 255, 255, 0.28);
     border-top: 0px;
     backdrop-filter: blur(10px);
